@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="wrap">
+        <main>
+            <h4>必买大牌</h4>
+            <div class="box">
+                <script type="text/x-handlebars-template" class="text">
+                    {{#each }}
+                    <dl>
+                        <dt><img src="{{img}}" alt=""></dt>
+                        <dd>{{title}}</dd>
+                    </dl>
+                    {{/each}}
+                </script>
+                <!-- <dl>
+                    <dt><img src="img/1.jpg" alt=""></dt>
+                    <dd>满300减70</dd>
+                </dl>
+                <dl>
+                    <dt><img src="img/1.jpg" alt=""></dt>
+                    <dd>满300减70</dd>
+                </dl>
+                <dl>
+                    <dt><img src="img/1.jpg" alt=""></dt>
+                    <dd>满300减70</dd>
+                </dl>
+                <dl>
+                    <dt><img src="img/1.jpg" alt=""></dt>
+                    <dd>满300减70</dd>
+                </dl>
+                <dl>
+                    <dt><img src="img/1.jpg" alt=""></dt>
+                    <dd>满300减70</dd>
+                </dl>
+                <dl>
+                    <dt><img src="img/1.jpg" alt=""></dt>
+                    <dd>满300减70</dd>
+                </dl>
+                <dl>
+                    <dt><img src="img/1.jpg" alt=""></dt>
+                    <dd>满300减70</dd>
+                </dl>
+                <dl>
+                    <dt><img src="img/1.jpg" alt=""></dt>
+                    <dd>满300减70</dd>
+                </dl>
+                <dl>
+                    <dt><img src="img/1.jpg" alt=""></dt>
+                    <dd>满300减70</dd>
+                </dl> -->
+            </div>
+            <h4>精选行业会场</h4>
+            <div class="box2">
+                <div class="box2_top">
+                    <dl>
+                        <dt><img src="img/5.jpg" alt=""></dt>
+                        <dd>
+                            <h4>笔记本电脑</h4>
+                            <p>最高立减500</p>
+                        </dd>
+                    </dl>
+                    <dl>
+                        <dt><img src="img/6.jpg" alt=""></dt>
+                        <dd>
+                            <h4>潮流男鞋</h4>
+                            <p>最高立减500</p>
+                        </dd>
+                    </dl>
+                </div>
+                <div class="box2_bottom">
+                    <p>发的房间</p>
+                    <p>等你等得</p>
+                    <p>咕咕咕咕</p>
+                    <p>点点滴滴</p>
+                </div>
+            </div>
+        </main>
+
+        <footer>
+            <dl>
+                <dt></dt>
+                <dd>主会场</dd>
+            </dl>
+            <dl>
+                <dt></dt>
+                <dd>全部会场</dd>
+            </dl>
+            <dl>
+                <dt></dt>
+                <dd>抢5折卷</dd>
+            </dl>
+            <dl>
+                <dt></dt>
+                <dd>榜单会场</dd>
+            </dl>
+            <dl>
+                <dt></dt>
+                <dd>我的618</dd>
+            </dl>
+        </footer>
+    </div>
+    <script src="js/lib/require.js"></script>
+    <script>
+        require(['js/main'], function() {
+            require(['index'])
+        })
+    </script>
+</body>
+
+</html>

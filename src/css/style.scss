@@ -1,0 +1,113 @@
+@import "./common.scss";
+.wrap {
+    width: 100%;
+    height: 100%;
+    background: rgb(95, 29, 29);
+    font-size: pxTorem(16px);
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    main {
+        width: 100%;
+        height: auto;
+        overflow: hidden;
+        overflow-y: auto;
+        h4 {
+            width: 100%;
+            height: pxTorem(50px);
+            text-align: center;
+            line-height: pxTorem(50px);
+            color: #fff;
+        }
+        .box {
+            width: 90%;
+            height: auto;
+            margin: 0 auto;
+            display: flex;
+            flex-wrap: wrap;
+            dl {
+                width: 32%;
+                height: pxTorem(120px);
+                background: #fff;
+                margin: pxTorem(2px);
+                dt {
+                    width: pxTorem(80px);
+                    height: pxTorem(80px);
+                    margin: pxTorem(5px) auto;
+                    img {
+                        width: 100%;
+                        height: 100%;
+                    }
+                }
+                dd {
+                    margin-top: pxTorem(10px);
+                    color: red;
+                    text-align: center;
+                }
+            }
+        }
+        .box2 {
+            width: 90%;
+            height: auto;
+            margin: 0 auto;
+            .box2_top {
+                display: flex;
+                background: #fff;
+                dl {
+                    width: 50%;
+                    height: pxTorem(100px);
+                    display: flex;
+                    border-right: 1px solid #ccc;
+                    dt {
+                        img {
+                            width: pxTorem(50px);
+                            height: pxTorem(50px);
+                        }
+                    }
+                    dd {
+                        h4 {
+                            color: #000;
+                        }
+                        p {
+                            color: red;
+                        }
+                    }
+                }
+            }
+            .box2_bottom {
+                display: flex;
+                background: #fff;
+                // p {
+                //     width: 22%;
+                //     height: pxTorem(50px);
+                //     border-right: 1px solid #ccc;
+                // }
+            }
+        }
+    }
+    footer {
+        width: 100%;
+        height: pxTorem(70px);
+        box-sizing: border-box;
+        padding: 0 pxTorem(5px);
+        background: #fff;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        dl {
+            dt {
+                width: pxTorem(30px);
+                height: pxTorem(30px);
+                border-radius: 50%;
+                background: pink;
+                margin: 0 auto;
+            }
+            dd {
+                text-align: center;
+            }
+        }
+    }
+}
